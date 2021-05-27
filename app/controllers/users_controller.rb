@@ -20,7 +20,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      flash[:notice] = "Your account information was successfully updated."
+      flash[:success] = "Your account information was successfully updated."
       redirect_to @user
     else
       render 'edit'
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      flash[:notice] = "Welcome, #{@user.username}, you have successfully signed up."
+      flash[:success] = "Welcome, #{@user.username}, you have successfully signed up."
       redirect_to @user
     else
       render 'new'
@@ -55,7 +55,7 @@ class UsersController < ApplicationController
 
   def require_same_user
     if current_user != @user && !current_user.admin?
-      flash[:alert] = "You can only edit your own account."
+      flash[:error] = "You can only edit your own account."
       redirect_to @user
     end
   end
