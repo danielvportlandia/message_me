@@ -55,10 +55,10 @@ Update a boolean attribute on an instance with toggle:
 user.toggle!(:admin)
 ```
 
-Generates a functional controller test file:
+Enable table views in the console (in the console)
 
 ```console
-rails generate test_unit:scaffold name_of_model
+Hirb.enable
 ```
 
 ## Generators
@@ -73,6 +73,12 @@ Prefill DB with mock data programatically (update db/migrate/seeds.rb file first
 
 ```console
 rails db:seed
+```
+
+Controller test file:
+
+```console
+rails generate test_unit:scaffold name_of_model
 ```
 
 &nbsp;
