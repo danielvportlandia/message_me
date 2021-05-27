@@ -75,10 +75,22 @@ Prefill DB with mock data programatically (update db/migrate/seeds.rb file first
 rails db:seed
 ```
 
+New Controller (e.g. messages)
+
+```console
+rails generate controller messages <action>
+```
+
 Controller test file:
 
 ```console
 rails generate test_unit:scaffold name_of_model
+```
+
+Undo a Controller generation:
+
+```console
+rails destroy controller messages
 ```
 
 &nbsp;
