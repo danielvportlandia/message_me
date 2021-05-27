@@ -111,6 +111,30 @@ group :production do
 end
 ```
 
+Handles various platforms in production, run this command to update your Gemfile.lock:
+
+```console
+bundle lock --add-platform x86_64-linux
+```
+
+Ensure that you're logged into Heroku. The CLI will link you to a page to use your authenticator app on:
+
+```console
+heroku login
+```
+
+To create a new production version of your app hosted in Heroku, use:
+
+```console
+heroku create
+```
+
+To rename your application in Heroku, run:
+
+```console
+heroku rename <new_name_of_application>
+```
+
 Ensure that the main branch is up-to-date in Github and that all gems are installed, then update the main branch in Heroku:
 
 ```console
