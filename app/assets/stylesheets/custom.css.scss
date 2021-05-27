@@ -12,6 +12,12 @@
   text-align: center;
 }
 
+.input {
+  button {
+    display: none;
+  }
+}
+
 #messages {
   height: 15em;
   overflow: auto;
