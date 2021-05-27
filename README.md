@@ -103,6 +103,14 @@ rails generate channel chatroom
 
 ## Production
 
+Ensure that a production DB is in place. Add this to your Gemfile:
+
+```console
+group :production do
+  gem 'pg'
+end
+```
+
 Ensure that the main branch is up-to-date in Github and that all gems are installed, then update the main branch in Heroku:
 
 ```console
