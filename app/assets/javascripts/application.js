@@ -18,7 +18,7 @@
 //= require_tree .
 
 scrollBottom = function() {
-  const messages = $('#messages');
+  var messages = $('#messages');
   if (messages.length) messages.scrollTop(messages[0].scrollHeight);
 };
 
