@@ -93,6 +93,12 @@ Undo a Controller generation:
 rails destroy controller messages
 ```
 
+New Channel (e.g. chatroom)
+
+```console
+rails generate channel chatroom
+```
+
 &nbsp;
 
 ## Production

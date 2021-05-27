@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   post 'users', to: 'users#create'
   resources :users, except: [:new]
   post 'message', to: 'messages#create'
+
+  mount ActionCable.server, at: '/cable'
 end
