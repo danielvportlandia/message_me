@@ -1,6 +1,6 @@
 # MESSAGE ME
 
-This is a real-time messaging application who's purpose is to showcase my abilities to work with ActionCable as well as familiarize myself with Rails 5. Click the link to see it in action [Message Me]().
+This is a real-time messaging application who's purpose is to showcase my abilities to work with ActionCable as well as familiarize myself with Rails 5. Click the link to see it in action [Message Me](https://message-me-0624.herokuapp.com).
 
 ## Versions
 
